@@ -19,6 +19,7 @@ function setInt() {
   }, 5000); 
 }
 setInt();
+// achivement
 let valueDisplays = document.querySelectorAll(".num");
 let interval = 4000;
 
@@ -34,6 +35,11 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
+
+
+
+// experiment achivement
+
 //  toast
 // Get the modal element
       var modal = document.getElementById("myModal");
