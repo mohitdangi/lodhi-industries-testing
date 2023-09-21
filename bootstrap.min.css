@@ -37,7 +37,7 @@
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
     --bs-dark: #212529;
-    --bs-primary-rgb: 13, 110, 253;
+    --bs-primary-rgb: #ffc107;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
     --bs-info-rgb: 13, 202, 240;
@@ -8605,7 +8605,7 @@ fieldset:disabled .btn {
 
 .text-primary {
     --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important
+    color:#ffc107
 }
 
 .text-secondary {

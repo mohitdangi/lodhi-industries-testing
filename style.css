@@ -183,6 +183,7 @@ body {
 	background: #fff;
 }
 .portfolio .card {
+
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 .team .card {
@@ -221,7 +222,7 @@ body {
 	background-size: 100% 200%;
 	background-position: 0 2.5%;
 	border-radius: 5px;
-	box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+	/* box-shadow: 0 0 35px rgba(0, 0, 0, 0.12); */
 	cursor: pointer;
 	transition: 0.5s;
   }
@@ -327,8 +328,8 @@ body {
     
 } */
 #clients .clients-wrap {
-    border-top: 1px solid #d6eaff;
-    border-left: 1px solid #d6eaff;
+    border: 1px solid #d6eaff;
+    /* border-left: 1px solid #d6eaff; */
     margin-bottom: 30px;
 }
 
@@ -477,6 +478,7 @@ body {
   width: fit-content;
   width: -moz-fit-content; /* Prefijo necesario para Firefox  */
   color: #fff !important;
+  font-size: 1.5rem;
   
 }
 
