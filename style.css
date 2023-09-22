@@ -13,6 +13,9 @@ body {
 
 	padding: 40px;
 }
+.phone-header{
+	cursor: pointer;
+}
 .six h1 {
 	text-align: center;
 	color:#222; font-size:30px; font-weight:400;
@@ -777,7 +780,7 @@ footer{
 	  padding-left: 50px;
 	}
   }
-
+  @media (max-width:950px){
 	footer .content .box{
 	  width: 50%;
 	}
