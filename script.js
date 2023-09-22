@@ -161,3 +161,30 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
         
+///////subscription
+
+// Add an event listener to the form submission
+document.getElementById("sendButton-mail").addEventListener("click", function () {
+
+  const emailInput = document.getElementById("emailInput");
+
+
+  // Regular expression for email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Check if all fields are filled and the email is valid
+  if (
+  
+    !emailPattern.test(emailInput.value.trim()) 
+  ) {
+    toastr.error("Please fill in all fields with valid information!", "Error");
+  } else {
+    // Show a success toast if all fields are filled and email is valid
+    toastr.success("Message sent successfully!", "Success");
+
+    // Clear the form after successful submission
+
+    emailInput.value = "";
+
+  }
+});

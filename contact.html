@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!--divinectorweb.com-->
@@ -5,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
 	<title>Lodhi Industries</title>
 	<!-- All CSS -->
 	<link href="bootstrap.min.css" rel="stylesheet">
@@ -28,19 +30,29 @@
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- owl varousel -->
+    <script  src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+<!-- Include Toastr CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
+<!-- Include Toastr JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-  <link rel="stylesheet" href="test.css">
+	<!-- <link href="style.css" rel="stylesheet"> -->
+	<link href="test.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="test.css"> -->
 </head>
 <div class="subheader-container bg-light ">
   <div class="container">
@@ -64,7 +76,9 @@
 </div>
 </div>
 </div>
+
   <div class="seperator"></div>
+
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#"><span class="text-warning">Lodhi</span>Industries</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
@@ -88,15 +102,15 @@
 		</div>
 	</nav>
 
-<div class="row">
+  <div class="row">
   <div class="six">
 <h1>Contact US<br>
 <span>Let Us Solve Your Queries</span>
 </h1>
 </div>
   </div>
-<div class="contact-container">
-  
+
+  <div class="contact-container">
     <div class="content">
       <div class="left-side">
         <div class="address details">
@@ -121,32 +135,33 @@
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
         <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
-            <input type="text" placeholder="Enter your message">
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" id="sendButton" >
-        </div>
-      </form>
+        <form action="#">
+          <div class="input-box">
+            <input type="text" placeholder="Enter your name" id="nameInput" required>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Enter your email" id="emailInput" required>
+          </div>
+          <div class="input-box message-box">
+            <input type="text" placeholder="Enter your message" id="messageInput" required>
+          </div>
+          <div class="button">
+            <input type="button" value="Send Now" id="sendButton">
+          </div>
+        </form>
         
-    </div>
+        
+      </div>
     </div>
   </div>
-  <div id="myModal" class="modal">
+  <!-- <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
         <i class="fas fa-check-circle fa-4x" style="color: #ffc107;"></i>
       
         <p>Thank you for your message! We will get back to you shortly.</p>
     </div>
-</div>
+</div> -->
 <footer>
   <div class="content">
     <div class="left box">
@@ -170,14 +185,14 @@
      <div><a href="index.html">Home</a></div>
      <div><a href="about.html">About</a></div>
      <div><a href="contact.html">Contact</a></div>
-     <div><a href="index.html#products">Our Products</a></div>
-     <div><a href="index.html#machines">Our Machines</a></div>
+     <div><a href="#products">Our Products</a></div>
+     <div><a href="#machines">Our Machines</a></div>
     </div>
     <div class="right box">
       <div class="topic">Subscribe us</div>
-      <form action="#" id="subscribeForm">
-          <input type="text" placeholder="Enter email address" id="emailInput" required>
-          <input type="submit" name="" value="Send" id="sendButton">
+      <form >
+          <input type="email" placeholder="Enter email address" id="emailInput-2" required>
+          <input type="submit" name="" value="Send" id="sendButton-mail">
           <span class="overlay"></span>
           <div class="media-icons">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -188,20 +203,14 @@
           </div>
       </form>
   </div>
-      <!-- <div class="modal" id="myModal">
-        <div class="modal-content">
-            <span class="close" id="closeModal">&times;</span>
-            <i class="fas fa-check-circle fa-4x" style="color: #ffc107;"></i>
-            <h2>Thank You!</h2>
-            <p>You have successfully subscribed.</p>
-        </div>
-    </div> -->
 
   </div>
   <div class="bottom">
-    <p>Copyright © 2023 <a href="#">websculpture</a> All rights reserved</p>
+    <p>Copyright © 2023 <a href="https://www.websculpture.in/">websculpture</a> All rights reserved</p>
   </div>
 </footer>
+
+
   <!-- <script>
            // Get the modal element
            var modal = document.getElementById("myModal");
@@ -229,7 +238,60 @@ window.onclick = function (event) {
     }
 }
 </script> -->
+<script>
+document.getElementById("sendButton").addEventListener("click", function () {
+  const nameInput = document.getElementById("nameInput");
+  const emailInput = document.getElementById("emailInput");
+  const messageInput = document.getElementById("messageInput");
 
+  // Regular expression for email validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // Check if all fields are filled and the email is valid
+  if (
+    nameInput.value.trim() === "" ||
+    !emailPattern.test(emailInput.value.trim()) ||
+    messageInput.value.trim() === ""
+  ) {
+    toastr.error("Please fill in all fields with valid information!", "Error");
+  } else {
+    // Show a success toast if all fields are filled and email is valid
+    toastr.success("Message sent successfully!", "Success");
+
+    // Clear the form after successful submission
+    nameInput.value = "";
+    emailInput.value = "";
+    messageInput.value = "";
+  }
+});
+
+// PushSubscription
+ // Add an event listener to the form submission
+document.getElementById("sendButton-mail").addEventListener("click", function () {
+
+const emailInput = document.getElementById("emailInput-2");
+
+
+// Regular expression for email validation
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+// Check if all fields are filled and the email is valid
+if (
+
+  !emailPattern.test(emailInput.value.trim()) 
+) {
+  toastr.error("Please fill in all fields with valid information!", "Error");
+} else {
+  // Show a success toast if all fields are filled and email is valid
+  toastr.success("Message sent successfully!", "Success");
+
+  // Clear the form after successful submission
+
+  emailInput.value = "";
+
+}
+});
+</script>
   <script src="script.js"></script> 
   <script src="bootstrap.bundle.min.js"></script> 
 </body>
