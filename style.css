@@ -182,6 +182,34 @@ body {
 	line-height: 0.3;
 	background: #fff;
 }
+/* 0wl-carousel */
+.wrapper{
+	width: 100%;
+  }
+  .owl-carousel{
+	/* max-width: 1200px; */
+	/* margin: auto; */
+	width: 100%;
+	/* padding: 0 30px; */
+  }
+  .owl-dots{
+	text-align: center;
+	margin-top: 40px;
+  }
+  .owl-dot{
+	height: 15px;
+	width: 35px;
+	margin: 0 5px;
+	outline: none;
+	border-radius: 14px;
+	border: 2px solid #ffc107!important;
+	transition: all 0.3s ease;
+  }
+  .owl-dot.active,
+  .owl-dot:hover{
+	background: #ffc107!important;
+  }
+  
 .portfolio .card {
 
 	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
@@ -749,16 +777,21 @@ footer{
 	  padding-left: 50px;
 	}
   }
-  @media (max-width:950px){
+
 	footer .content .box{
 	  width: 50%;
 	}
 	.content .right{
 	  margin-top: 40px;
 	}
-	.phone-header{
+	.social-media{
 		display:none ;
 	}
+	.left-header{
+		width: 100%;
+		justify-content: space-between;
+	}
+
   }
   @media (max-width:560px){
 	footer{
@@ -771,9 +804,9 @@ footer{
 	footer .content .middle{
 	  padding-left: 0;
 	}
-	.location{
+	/* .location{
 		display: none;
-	}
+	} */
 	.bottom p{
 		font-size: 12px;
 	}
@@ -856,6 +889,9 @@ font-size: 2em;
 	  width: calc(50% - 40px);
 	  height: 30vmin;
 	  font-size: 14px;
+	}
+	.mail{
+		display: none;
 	}
   }
   @media screen and (max-width: 480px) {

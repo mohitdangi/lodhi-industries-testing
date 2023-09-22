@@ -12,33 +12,7 @@
 body {
 	background: #f1fbff;
 	overflow-x: hidden !important;
-}.wrapper{
-  width: 100%;
 }
-.owl-carousel{
-  /* max-width: 1200px; */
-  /* margin: auto; */
-  width: 100%;
-  /* padding: 0 30px; */
-}
-.owl-dots{
-  text-align: center;
-  margin-top: 40px;
-}
-.owl-dot{
-  height: 15px;
-  width: 35px;
-  margin: 0 5px;
-  outline: none;
-  border-radius: 14px;
-  border: 2px solid #ffc107!important;
-  transition: all 0.3s ease;
-}
-.owl-dot.active,
-.owl-dot:hover{
-  background: #ffc107!important;
-}
-
 
 /* contact */
 
@@ -321,9 +295,17 @@ footer{
 	.content .right{
 	  margin-top: 40px;
 	}
-	.phone-header{
+	/* .phone-header{
+		display:none ;
+	} */
+	.left-header{
+		width: 100%;
+		justify-content: space-between;
+	}
+	.social-media{
 		display:none ;
 	}
+
   }
   @media (max-width:560px){
 	footer{
@@ -336,9 +318,9 @@ footer{
 	footer .content .middle{
 	  padding-left: 0;
 	}
-	.location{
+	/* .location{
 		display: none;
-	}
+	} */
 	.bottom p{
 		font-size: 12px;
 	}
@@ -354,7 +336,12 @@ footer{
   }
 
   /* subheader */
-  
+  @media screen and (max-width: 768px) {
+
+	.mail{
+		display: none;
+	}
+}
 .six{
 
 	padding: 40px;
