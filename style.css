@@ -89,7 +89,6 @@ body {
 	transition: all 0.3s ease;
   }
   .subheader i:hover{
-	
 	border: 2px solid #ffc107;
     color:#ffc107 ;
   }
