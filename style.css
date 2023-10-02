@@ -16,6 +16,10 @@ body {
 .phone-header{
 	cursor: pointer;
 }
+.phone-header .fa-phone {
+	transform: rotate(90deg);
+  }
+  
 .six h1 {
 	text-align: center;
 	color:#222; font-size:30px; font-weight:400;
